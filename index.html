@@ -1,0 +1,158 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg   ">
+            <div class="container  ">
+                <a class="navbar-brand w-auto fs-6" href="#">
+                    <img src="./imgs/logo.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top d-inline">
+                    Weather <br>
+                    <span class="fs-6 fw-lighter">tagline goes here</span>
+
+                </a>
+
+
+                <div class="collapse navbar-collapse  d-flex flex-row-reverse p-2 text-center "
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0  ">
+                        <li class="nav-item  p-2">
+                            <a class="nav-link active text-decoration-none  px-4 rounded-pill    " aria-current="page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item p-2  ">
+                            <a class="nav-link nav-anch text-decoration-none px-4 text-white " aria-current="page"
+                                href="#">News</a>
+                        </li>
+                        <li class="nav-item p-2 ">
+                            <a class="nav-link nav-anch  text-decoration-none  px-4 text-white " aria-current="page"
+                                href="#">Live camers</a>
+                        </li>
+                        <li class="nav-item p-2 ">
+                            <a class="nav-link  nav-anch text-decoration-none px-4 text-white " aria-current="page"
+                                href="#">photos</a>
+                        </li>
+                        <li class="nav-item p-2 ">
+                            <a class="nav-link nav-anch  text-decoration-none text-white   px-4" aria-current="page"
+                                href="#">Contact</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="home w-100  mb-4">
+        <div class=" container ">
+            <div class="row g-0 position-relative">
+
+                <form action="" method="" class="my-5 ps-3">
+                    <input type="search" placeholder="find your country " id="searchCountry">
+                    <button id="searchbtn" type="button">Search</button>
+                </form>
+
+                <div id="mainDayDate" class="head maindayHead col-md-4  p-3 text-muted">
+                    <span id="day" class="float-start"></span>
+                    <span id="dayDate" class="float-end"></span>
+                    <div class="clr"></div>
+                </div>
+                <div id="day1Date" class="head maindayHead col-md-4  p-3 text-muted">
+                    <span id="day1day" class="float-start"></span>
+                    <span id="day1Month" class="float-end"></span>
+                    <div class="clr"></div>
+                </div>
+                <div id="day2Date" class="head maindayHead col-md-4  p-3 text-muted">
+                    <span id="day2day" class="float-start"></span>
+                    <span id="day2Month" class="float-end"></span>
+                    <div class="clr"></div>
+                </div>
+                <div id="mainDay" class="col-md-4 border-1 dayDiv p-4 ">
+
+
+                    <h5 id="country" class="mt-3 "> Cairo International Airpor</h5>
+                    <h2 id="tempretur" class="pt-3  d-inline fw-bolder mb-2">32 <sup>o</sup>C</h2><img
+                        class=" w-25 d-inline " id="tempIcon" src="./weather/64x64/day/113.png" alt="">
+                    <h6 id="dayForcast" class="my-3"> Sunny</h6>
+                    <ul class="list-unstyled">
+                        <li id="rain" class="d-inline m-3">
+                            <img src="./imgs/icon-umberella.png" alt="" class="d-inline">
+                            <h6 id="cloudy" class="d-inline"></h6>
+                        </li>
+                        <li id="wind" class="d-inline m-3">
+                            <img class="d-inline" src="./imgs/icon-wind.png" alt="">
+                            <h6 id="windStatus" class="d-inline">18 km/h</h6>
+                        </li>
+                        <li id="windDirection" class="d-inline m-3">
+                            <img src="./imgs/icon-compass.png" alt="" class="d-inline">
+                            <h6 id="windDirectionStatus" class="d-inline">East</h6>
+                        </li>
+                    </ul>
+                </div>
+                <div id="day1" class="col-md-4 border-1 dayDiv  p-4  text-center">
+
+
+                    <img id="tempIcon" src="./imgs/113.png" alt="" class="text-center">
+                    <h2 id="tempretur" class="pt-3  fw-bolder mb-2">39<sup>o</sup>C</h2>
+                    <h6 id="dayForcast" class="my-3"> </h6>
+
+                </div>
+                <div id="day2" class="col-md-4 border-1 dayDiv  text-center p-4 ">
+
+
+                    <img id="tempIcon" src="./imgs/113.png" alt="" class="text-center">
+                    <h2 id="tempretur" class="pt-3  fw-bolder mb-2">39<sup>o</sup>C</h2>
+                    <h6 id="dayForcast" class="my-3"> Sunny</h6>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" h-50  subscribe ">
+        <form action="" method="" class="my-5 ps-3   subscribeForm">
+          
+            <input type="text" placeholder="enter your email to subscribe  " class="SuscribeInput">
+
+            <button class="subscribeBtn" type="button">Subscribe</button>
+            <p  id="validationMessage" class="  fs-6 w-100  d-block">  </p>
+
+       
+        </form>
+        <ul class="list-unstyled  ">
+            <li class="d-inline m-3 fs-5">
+                <a href=""> <i class=" fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="d-inline m-3 fs-5">
+                <a href=""> <i class="  fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="d-inline m-3 fs-5">
+                <a href=""> <i class="  fa-brands fa-pinterest"></i></a>
+            </li>
+            <li class="d-inline m-3 fs-5">
+                <a href=""> <i class="  fa-brands fa-google-plus-g"></i></a>
+            </li>
+        </ul>
+        <h6 class="text-muted">Copyright 2014 Company name. Designed by Themezy. All rights reserved</h6>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
